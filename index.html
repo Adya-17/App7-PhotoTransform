@@ -106,7 +106,10 @@
          // grabbing context for canvas 2 dimensions
         var context2 = canvas2.getContext("2d");  
      
-          
+         // image2 will be same dimesions as image1 
+        var imageData = context.getImageData(0, 0, 600, 500); 
+         // this ensures the canvas will be stored in pixels
+        var canvasData = imageData.data;
           
         } // end of img.onload
         
