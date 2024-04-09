@@ -110,6 +110,11 @@
         var imageData = context.getImageData(0, 0, 600, 500); 
          // this ensures the canvas will be stored in pixels
         var canvasData = imageData.data;
+
+         // processing for each pixel
+        for(var i = 0; i < canvasData.length; i += 4) { 
+            canvasData[i] = 0; // no red is shown as it makes each red zero
+            canvasData[i + 1] = 0; // no green is shown as it makes each green zero
           
         } // end of img.onload
         
