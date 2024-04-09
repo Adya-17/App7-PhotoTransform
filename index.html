@@ -134,17 +134,7 @@
   }); // end of the fileInput.addEventListener function
  } // end of the window.onload function
 
-  // this function transports image from canvas 1 to canvas 2
-  function transportImage() {
-  var canvas1 = document.getElementById('myCanvas');
-  var context1 = canvas1.getContext("2d");
-
-  var canvas2 = document.getElementById('myCanvas2');
-  var context2 = canvas2.getContext("2d");
-
-  var imageData = context1.getImageData(0, 0, canvas1.width, canvas1.height);
-  context2.putImageData(imageData, 0, 0);
-}
+  
  </script>
  </head>
 
@@ -183,6 +173,6 @@
       <p>DIY Diagnostics</p>
     </div><!-- /footer -->
   </div><!-- /page -->
-  <button onclick="transportImage()">Transport Image</button> * This script creates a button for image to load onto canvas2 */
+  
  </body>
 </html>
