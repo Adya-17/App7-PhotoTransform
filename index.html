@@ -115,6 +115,9 @@
         for(var i = 0; i < canvasData.length; i += 4) { 
             canvasData[i] = 0; // no red is shown as it makes each red zero
             canvasData[i + 1] = 0; // no green is shown as it makes each green zero
+         }
+         
+         context2.putImageData(imageData, 0, 0); // display blue image on canvas 2 
           
         } // end of img.onload
         
